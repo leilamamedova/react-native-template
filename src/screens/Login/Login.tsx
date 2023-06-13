@@ -1,16 +1,13 @@
 import React, { useEffect } from "react";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
-
 import { Button } from "@rneui/themed";
 import { View, Text, Alert } from "react-native";
-
 import { useSelector, useDispatch } from "react-redux";
 
 import useTranslate from "@/hooks/useTranslate";
 import axios from "@/networking";
 import { styles } from "@/screens/Login/styles";
-
 import User from "@/store/actions/UserActions";
 
 export const Login = (): React.ReactElement => {
