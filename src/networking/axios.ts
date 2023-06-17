@@ -3,7 +3,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
 import { Alert } from "react-native";
 
-import WebConf, { AuthServerUrl } from "@/api/WebConf";
+import webConfig, { AuthServerUrl } from "@/api/webConfig";
 
 const baseURL = SERVER_URL;
 const headers = {
@@ -29,7 +29,7 @@ const getTokenWhenTokenIsExpired = async (config): Promise<any> => {
 
   const response = await instance.post(
     AuthServerUrl +
-      WebConf.auth.login +
+      webConfig.auth.login +
       `?grant_type=refresh_token&refresh_token=${await AsyncStorage.getItem(
         "refresh_token",
       )}`,

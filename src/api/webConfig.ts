@@ -3,10 +3,10 @@ import { SERVER_URL } from "@env";
 export const defaultRoute = SERVER_URL + "/api";
 export const AuthServerUrl = defaultRoute;
 
-const WebConf = {
+const webConfig = {
   auth: {
     login: "/",
   },
 };
 
-export default WebConf;
+export default webConfig;
