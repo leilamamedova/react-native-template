@@ -1,13 +1,11 @@
-/* eslint-disable @typescript-eslint/ban-types */
-/* eslint-disable @typescript-eslint/no-empty-function */
-
 import { useCallback } from "react";
 
+import { DispatchFunction } from "@/store/actions/interfaces";
 import { errorTypes as TYPES } from "@/store/types/ErrorTypes";
 
 export default class Error {
-  dispatch: Function = () => {};
-  constructor(dispatch: Function) {
+  dispatch: DispatchFunction = () => {};
+  constructor(dispatch: DispatchFunction) {
     this.dispatch = dispatch;
   }
 

@@ -11,9 +11,9 @@
   },
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-empty-interface": "warn",
     "no-console": "warn",
-    "no-unused-vars": "warn",
     "no-use-before-define": 0,
     "eqeqeq": ["warn", "smart"],
     "@typescript-eslint/explicit-function-return-type": [
